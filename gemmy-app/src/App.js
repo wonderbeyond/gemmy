@@ -15,12 +15,15 @@ class App extends Component {
       console.log('New index data:', indexData)
       let hitNum = randomInt(1, indexData.total_count)  // starts from 1
       let pageNum = Math.ceil(hitNum / indexData.pagination.size)
-      let inPageOffset = hitNum % indexData.pagination.size
-      console.log(`Hit gem#${hitNum}, at page#${pageNum} line#${inPageOffset}`)
+      let inPageOffset = (hitNum % indexData.pagination.size) - 1  // start from 0
+      if (inPageOffset == -1) {
+        inPageOffset = indexData.pagination.size - 1
+      }
+      console.log(`Hit gem#${hitNum}, at page#${pageNum} line#${inPageOffset + 1}`)
       fetch(`${GEMMY_BASE_URL}/gems/${pageNum}`).then(resp => {
         resp.text().then(text => {
           let lines = text.split('\n')
-          let hitGem = lines[inPageOffset - 1]
+          let hitGem = lines[inPageOffset]
           console.log('GEM:', hitGem);
           this.setState({
             hitGem: hitGem
