@@ -1,7 +1,7 @@
 {
   "main.css": "https://wonderbeyond.github.io/gemmy/gemmy-app/static/css/main.bd0e55c3.chunk.css",
-  "main.js": "https://wonderbeyond.github.io/gemmy/gemmy-app/static/js/main.b34d4df8.chunk.js",
-  "main.js.map": "https://wonderbeyond.github.io/gemmy/gemmy-app/static/js/main.b34d4df8.chunk.js.map",
+  "main.js": "https://wonderbeyond.github.io/gemmy/gemmy-app/static/js/main.5218b82f.chunk.js",
+  "main.js.map": "https://wonderbeyond.github.io/gemmy/gemmy-app/static/js/main.5218b82f.chunk.js.map",
   "static/js/1.61513c9d.chunk.js": "https://wonderbeyond.github.io/gemmy/gemmy-app/static/js/1.61513c9d.chunk.js",
   "static/js/1.61513c9d.chunk.js.map": "https://wonderbeyond.github.io/gemmy/gemmy-app/static/js/1.61513c9d.chunk.js.map",
   "runtime~main.js": "https://wonderbeyond.github.io/gemmy/gemmy-app/static/js/runtime~main.c0bf04da.js",
@@ -9,6 +9,6 @@
   "static/media/logo.svg": "https://wonderbeyond.github.io/gemmy/gemmy-app/static/media/logo.5d5d9eef.svg",
   "static/css/main.bd0e55c3.chunk.css.map": "https://wonderbeyond.github.io/gemmy/gemmy-app/static/css/main.bd0e55c3.chunk.css.map",
   "index.html": "https://wonderbeyond.github.io/gemmy/gemmy-app/index.html",
-  "precache-manifest.8dd4da76d9a2453e49eedf162398ef41.js": "https://wonderbeyond.github.io/gemmy/gemmy-app/precache-manifest.8dd4da76d9a2453e49eedf162398ef41.js",
+  "precache-manifest.9704f71cadb63c84319c3c1a580d6ea0.js": "https://wonderbeyond.github.io/gemmy/gemmy-app/precache-manifest.9704f71cadb63c84319c3c1a580d6ea0.js",
   "service-worker.js": "https://wonderbeyond.github.io/gemmy/gemmy-app/service-worker.js"
 }

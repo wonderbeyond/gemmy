@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "https://wonderbeyond.github.io/gemmy/gemmy-app/precache-manifest.8dd4da76d9a2453e49eedf162398ef41.js"
+  "https://wonderbeyond.github.io/gemmy/gemmy-app/precache-manifest.9704f71cadb63c84319c3c1a580d6ea0.js"
 );
 
 workbox.clientsClaim();

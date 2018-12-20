@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "b34d4df87771819bee4e",
+    "revision": "5218b82fc557b495899c",
     "url": "https://wonderbeyond.github.io/gemmy/gemmy-app/static/css/main.bd0e55c3.chunk.css"
   },
   {
-    "revision": "b34d4df87771819bee4e",
-    "url": "https://wonderbeyond.github.io/gemmy/gemmy-app/static/js/main.b34d4df8.chunk.js"
+    "revision": "5218b82fc557b495899c",
+    "url": "https://wonderbeyond.github.io/gemmy/gemmy-app/static/js/main.5218b82f.chunk.js"
   },
   {
     "revision": "61513c9de70eb899c0cf",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "https://wonderbeyond.github.io/gemmy/gemmy-app/static/media/logo.5d5d9eef.svg"
   },
   {
-    "revision": "1ad3819c8bd834790a46cd052c9ded49",
+    "revision": "6d74a4d0f148951fcc0d46cab2e5c84a",
     "url": "https://wonderbeyond.github.io/gemmy/gemmy-app/index.html"
   }
 ];
