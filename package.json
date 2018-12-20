@@ -1,20 +1,22 @@
 {
     "name": "gemmy",
     "version": "0.0.1",
-    "description": "One line brilliant words",
-    "main": "index.js",
+    "description": "One line brilliant words, e.g. mottos, little skills.",
+    "main": "\"\"",
+    "dependencies": {
+        "gh-pages": "^2.0.1"
+    },
+    "devDependencies": {},
     "scripts": {
+        "build-gems": "bash build-gems.sh",
+        "build-gemmy-app": "bash build-gemmy-app.sh",
+        "gh-pages": "gh-pages -d dist",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/wonderbeyond/gemmy.git"
     },
-    "keywords": [
-        "motto",
-        "oneline",
-        "skill"
-    ],
     "author": "wonderbeyond",
     "license": "MIT",
     "bugs": {
