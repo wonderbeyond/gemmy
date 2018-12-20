@@ -1,14 +1,14 @@
 {
-  "main.css": "/static/css/main.bd0e55c3.chunk.css",
-  "main.js": "/static/js/main.0159f7f0.chunk.js",
-  "main.js.map": "/static/js/main.0159f7f0.chunk.js.map",
-  "static/js/1.61513c9d.chunk.js": "/static/js/1.61513c9d.chunk.js",
-  "static/js/1.61513c9d.chunk.js.map": "/static/js/1.61513c9d.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
-  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg",
-  "static/css/main.bd0e55c3.chunk.css.map": "/static/css/main.bd0e55c3.chunk.css.map",
-  "index.html": "/index.html",
-  "precache-manifest.c2c77d0f509969c734cf86f75b91b41a.js": "/precache-manifest.c2c77d0f509969c734cf86f75b91b41a.js",
-  "service-worker.js": "/service-worker.js"
+  "main.css": "https://wonderbeyond.github.io/gemmy/gemmy-app/static/css/main.bd0e55c3.chunk.css",
+  "main.js": "https://wonderbeyond.github.io/gemmy/gemmy-app/static/js/main.b34d4df8.chunk.js",
+  "main.js.map": "https://wonderbeyond.github.io/gemmy/gemmy-app/static/js/main.b34d4df8.chunk.js.map",
+  "static/js/1.61513c9d.chunk.js": "https://wonderbeyond.github.io/gemmy/gemmy-app/static/js/1.61513c9d.chunk.js",
+  "static/js/1.61513c9d.chunk.js.map": "https://wonderbeyond.github.io/gemmy/gemmy-app/static/js/1.61513c9d.chunk.js.map",
+  "runtime~main.js": "https://wonderbeyond.github.io/gemmy/gemmy-app/static/js/runtime~main.c0bf04da.js",
+  "runtime~main.js.map": "https://wonderbeyond.github.io/gemmy/gemmy-app/static/js/runtime~main.c0bf04da.js.map",
+  "static/media/logo.svg": "https://wonderbeyond.github.io/gemmy/gemmy-app/static/media/logo.5d5d9eef.svg",
+  "static/css/main.bd0e55c3.chunk.css.map": "https://wonderbeyond.github.io/gemmy/gemmy-app/static/css/main.bd0e55c3.chunk.css.map",
+  "index.html": "https://wonderbeyond.github.io/gemmy/gemmy-app/index.html",
+  "precache-manifest.8dd4da76d9a2453e49eedf162398ef41.js": "https://wonderbeyond.github.io/gemmy/gemmy-app/precache-manifest.8dd4da76d9a2453e49eedf162398ef41.js",
+  "service-worker.js": "https://wonderbeyond.github.io/gemmy/gemmy-app/service-worker.js"
 }
