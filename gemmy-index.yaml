@@ -3,3 +3,4 @@ total_count: 32
 pagination:
   size: 10
 exclude: [3]
+tags: [motto, life, coding, shell, linux]

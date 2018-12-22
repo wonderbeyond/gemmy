@@ -1,5 +1,3 @@
-export PUBLIC_URL="https://wonderbeyond.github.io/gemmy/gemmy-app"
-
 rm -r dist/gemmy-app
 
 cd gemmy-app
