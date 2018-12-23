@@ -6,8 +6,6 @@ if (!GEMMY_BASE_URL) {
 }
 
 export class GemmyClient {
-  constructor() {}
-
   fetchIndex() {
     return fetch(`${GEMMY_BASE_URL}/gemmy-index.json`).then(resp => {
       let data = resp.json()
