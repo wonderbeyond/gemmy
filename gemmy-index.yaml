@@ -1,5 +1,6 @@
 version: "0.0.1"
-total_count: 32
+total_count: 100
 pagination:
   size: 10
 exclude: [3]
+tags: [motto, life, coding, shell, linux]
