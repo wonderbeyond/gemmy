@@ -18,6 +18,10 @@
   color: white;
 }
 
+code {
+    color: #cb3837;
+}
+
 .credit-info {
     font-size: 0.8em;
 }

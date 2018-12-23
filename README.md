@@ -44,3 +44,14 @@ tags: [motto, life, coding, shell, linux]
 ### 如何随机获取指定 tag 下的 GEM
 
 获取对应 tag 的索引文件，随机挑选一条，然后参考上面的方法，根据 GEM ID 获取 GEM 词条。
+
+## GEM 数据管理
+
+脚本 `gemman.js` 提供了常规的管理命令，功能包括：
+
+- 导出所有 GEM 到单个文件
+- 批量添加 GEM
+
+```javascript
+node gemman.js --help
+```

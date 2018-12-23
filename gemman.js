@@ -23,8 +23,9 @@ program.command('dump')
   .description(dedent`
     concat all chunks and dump.
 
-    Example:
-      ${process.argv[1]} dump > ~/gemmy-dump.txt
+      Example:
+
+        ${process.argv[1]} dump > ~/gemmy-dump.txt
   `)
   .action(function() {
     for (let chunk of iterChunks()) {
@@ -43,13 +44,15 @@ program.command('append [GEMs]')
   .description(dedent`
     Append GEMS, one GEM per line.
 
-    Example:
+      Example:
 
-      ${process.argv[1]} append '
-        [linux shell]查找文件所属包: dpkg -S /usr/bin/nc
-        [linux shell]查看最近10秒有哪些文件变动: find . -cmin -0.1 -type f'
+        ${process.argv[1]} append '
+          [linux shell]查找文件所属包: dpkg -S /usr/bin/nc
+          [linux shell]查看最近10秒有哪些文件变动: find . -cmin -0.1 -type f'
 
-      ${process.argv[1]} append < ~/gemmy-dump.txt
+        Or
+
+        ${process.argv[1]} append < ~/gemmy-dump.txt
   `).action(function(GEMs) {
     let indexData = loadIndex()
     let perPage = indexData.pagination.size
