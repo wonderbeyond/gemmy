@@ -4,10 +4,12 @@
 const dedent = require('dedent');
 const path = require('path')
 const fs = require('fs')
+const shell = require('shelljs');
 const readline = require('readline');
 
 const {
   tagsIndexDir,
+  chunksDir,
   loadIndex,
   dumpIndex,
   iterChunks,
@@ -38,6 +40,21 @@ program.command('check-count').action(function() {
   const count = getGEMCount()
   console.log(`Total GEM count: ${count}`);
   console.log(`Indexed count:   ${indexData.total_count}`);
+})
+
+program.command('truncate').action(function() {
+  const indexData = loadIndex()
+  indexData.tags = []
+  indexData.total_count = 0
+
+  console.log(`Remove ${chunksDir}...`)
+  shell.rm('-r', chunksDir)
+
+  console.log(`Remove ${tagsIndexDir}...`)
+  shell.rm('-r', tagsIndexDir)
+
+  dumpIndex(indexData)
+  console.log(`Truncated. New indexed data: ${JSON.stringify(indexData)}`);
 })
 
 program.command('append [GEMs]')
@@ -103,6 +120,7 @@ program.command('append [GEMs]')
         tagsIndex.add(tagName, newID)
       }
 
+      // make chunk dir
       fs.mkdirSync(dirName, {recursive: true})
       fs.appendFileSync(chunkPath, `${one}\n`)
       totalCount++
@@ -110,14 +128,33 @@ program.command('append [GEMs]')
 
     function updateIndex() {
       indexData.total_count = totalCount
+      indexData.tags = (indexData.tags || []).concat(
+        [...tagsIndex.keys()]
+      )
+      indexData.tags = [...new Set(indexData.tags)]  // get unique list
 
       dumpIndex(indexData)
+
+      // write tags index
+      fs.mkdirSync(tagsIndexDir, {recursive: true})
       for (let [tagName, ids] of tagsIndex) {
+        let tagIndexFilePath = path.join(tagsIndexDir, `${tagName}.json`)
+
+        try {
+          let eIDs = JSON.parse(fs.readFileSync(tagIndexFilePath, 'utf8'))
+          ids = new Set([...ids, ...eIDs])
+        } catch (err) {
+          if (err.code !== 'ENOENT') {
+            throw err
+          }
+        }
+
         fs.writeFileSync(
-          path.join(tagsIndexDir, `${tagName}.json`),
+          tagIndexFilePath,
           JSON.stringify([...ids])
         )
       }
+
       console.log(dedent`---
         Updated main index: ${JSON.stringify(indexData)}
         Tags index: ${JSON.stringify(tagsIndex.toObj())}
