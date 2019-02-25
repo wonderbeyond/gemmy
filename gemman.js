@@ -1,6 +1,7 @@
 /**
  * gemman -- GEM Manager
  */
+const yaml = require('js-yaml');
 const dedent = require('dedent');
 const path = require('path')
 const fs = require('fs')
@@ -21,20 +22,6 @@ const {
 
 var program = require('commander');
 
-program.command('dump')
-  .description(dedent`
-    concat all chunks and dump.
-
-      Example:
-
-        ${process.argv[1]} dump > ~/gemmy-dump.txt
-  `)
-  .action(function() {
-    for (let chunk of iterChunks()) {
-      console.log(chunk);
-    }
-  })
-
 program.command('check-count').action(function() {
   const indexData = loadIndex()
   const count = getGEMCount()
@@ -42,38 +29,25 @@ program.command('check-count').action(function() {
   console.log(`Indexed count:   ${indexData.total_count}`);
 })
 
-program.command('truncate').action(function() {
-  const indexData = loadIndex()
-  indexData.tags = []
-  indexData.total_count = 0
-
-  console.log(`Remove ${chunksDir}...`)
-  shell.rm('-r', chunksDir)
-
-  console.log(`Remove ${tagsIndexDir}...`)
-  shell.rm('-r', tagsIndexDir)
-
-  dumpIndex(indexData)
-  console.log(`Truncated. New indexed data: ${JSON.stringify(indexData)}`);
-})
-
-program.command('append [GEMs]')
+program.command('index [GEMs]')
   .description(dedent`
     Append GEMS, one GEM per line.
 
       Example:
 
-        ${process.argv[1]} append '
+        ${process.argv[1]} index '
           [linux shell]查找文件所属包: dpkg -S /usr/bin/nc
           [linux shell]查看最近10秒有哪些文件变动: find . -cmin -0.1 -type f'
 
         Or
 
-        ${process.argv[1]} append < ~/gemmy-dump.txt
+        ${process.argv[1]} index < ~/gemmy-dump.txt
   `).action(function(GEMs) {
-    let indexData = loadIndex()
+    let indexData = yaml.safeLoad(
+      fs.readFileSync('./gems/index-initial.yaml', 'utf8')
+    );
     let perPage = indexData.pagination.size
-    let totalCount = getGEMCount()
+    let totalCount = 0
     let lastID = totalCount  // start from 1
 
     let tagsIndex = new class TagsIndex extends Map {

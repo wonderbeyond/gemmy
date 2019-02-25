@@ -2,8 +2,4 @@ version: 1.0.0
 pagination:
   size: 10
 total_count: 101
-tags:
-  - motto
-  - life
-  - linux
-  - shell
+tags: []

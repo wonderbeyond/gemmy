@@ -14,11 +14,13 @@
         "shelljs": "^0.8.3",
         "yamljs": "^0.3.0"
     },
-    "devDependencies": {},
+    "devDependencies": {
+        "npm-run-all": "^4.1.5"
+    },
     "scripts": {
         "build-gems": "bash build-gems.sh",
         "build-gemmy-app": "bash build-gemmy-app.sh",
-        "gh-pages": "gh-pages -d dist",
+        "gh-pages": "npm-run-all -p build-gems build-gemmy-app && gh-pages -d dist",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
