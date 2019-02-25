@@ -1,4 +1,3 @@
 [linux shell]查找文件所属包: `dpkg -S /usr/bin/nc`
 [linux shell]查看最近10秒有哪些文件变动: find . -cmin -0.1 -type f
-[linux shell]查看最近10秒有哪些文件变动: find . -cmin -0.1 -type f
 [linux shell]Resize a window to size of 1280x800: `wmctrl -i -r <WIN ID> -e 0,0,0,1280,800`
