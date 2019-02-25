@@ -1,1 +1,0 @@
-[linux shell]查看最近10秒有哪些文件变动: find . -cmin -0.1 -type f
