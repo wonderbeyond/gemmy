@@ -4023,6 +4023,11 @@ gauge@~2.7.3:
     strip-ansi "^3.0.1"
     wide-align "^1.1.0"
 
+gemmy-client@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/gemmy-client/-/gemmy-client-0.0.1.tgz#215b3f2ea76dc589a98d3d729c11ab10fe8d28ba"
+  integrity sha512-CYBOkv8Xwr51yJElzE8R3f0DCy5npzw91dHN7JBFyLHqQs96bLOLC4I4Sc72DO+ozHBQvdzKlvHs7HgosKXArw==
+
 get-caller-file@^1.0.1:
   version "1.0.3"
   resolved "http://registry.npm.taobao.org/get-caller-file/download/get-caller-file-1.0.3.tgz#f978fa4c90d1dfe7ff2d6beda2a515e713bdcf4a"
