@@ -1,7 +1,11 @@
 version: 1.0.0
 pagination:
   size: 10
-total_count: 3
+total_count: 16
 tags:
   - linux
   - shell
+  - deb
+  - fs
+  - ssh
+  - python

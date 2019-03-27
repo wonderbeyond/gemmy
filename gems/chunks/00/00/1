@@ -1,0 +1,6 @@
+[linux shell]Get last reboot/boot time: `who -b`
+[linux shell ssh]Compare remote and local files: `ssh user@host cat filename | diff filename -`
+[linux shell python]Static HTTP server: `python3 -m http.server 8000 --bind 127.0.0.1`
+[linux shell]Generate random passwords: `apg` or `apg -a 1` or `openssl rand -base64 12`
+[linux shell]Copy text via cli: `echo OK | xclip -i`, then paste by clicking mouse middle-button
+[linux shell]✨ Show env of a process: `ps eww -p <PID>`
