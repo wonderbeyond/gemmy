@@ -12,15 +12,15 @@ self.__precacheManifest = [
     "url": "https://wonderbeyond.github.io/gemmy/gemmy-app/static/js/main.46a70c17.chunk.js"
   },
   {
-    "revision": "f9658e37d35d2b15e734",
-    "url": "https://wonderbeyond.github.io/gemmy/gemmy-app/static/js/1.f9658e37.chunk.js"
+    "revision": "d3c44f3677c402aa5390",
+    "url": "https://wonderbeyond.github.io/gemmy/gemmy-app/static/js/1.d3c44f36.chunk.js"
   },
   {
     "revision": "46a70c1782f6007b6dbd",
     "url": "https://wonderbeyond.github.io/gemmy/gemmy-app/static/css/main.4857546f.chunk.css"
   },
   {
-    "revision": "4fd9897d52c84b4f38c3b47f0205cf29",
+    "revision": "681a0fb336c6faedbefd5a47dcaafec1",
     "url": "https://wonderbeyond.github.io/gemmy/gemmy-app/index.html"
   }
 ];

@@ -7,4 +7,4 @@
 [linux shell]✨ Show full-detailed scrollable process tree: `ps auxwwf | less -S`
 [linux shell]Get processes count per user: `ps hax -o user | sort | uniq -c | sort -hr`
 [linux shell]Diff 2 directory trees: `diff <(cd dir1; find | sort) <(cd dir2; find | sort)`
-[linux shell]🦋View items in PATH, one per line: `echo $PATH | tr : '\n'`
+[linux shell]🦋 View items in PATH, one per line: `echo $PATH | tr : '\n'`

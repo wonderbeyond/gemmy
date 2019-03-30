@@ -4,3 +4,6 @@
 [linux shell]Generate random passwords: `apg` or `apg -a 1` or `openssl rand -base64 12`
 [linux shell]Copy text via cli: `echo OK | xclip -i`, then paste by clicking mouse middle-button
 [linux shell]✨ Show env of a process: `ps eww -p <PID>`
+[linux grub]Let GRUB save your choice as default for next boot: `GRUB_DEFAULT=saved; GRUB_SAVEDEFAULT=true`
+[linux shell]🦅 Monitor realtime additions to a file: `tail -F access.log | grep 404`
+[linux shell]✨ Monitor a command's output continuously, e.g. `watch -n 0.5 'ps aux | wc -l'`

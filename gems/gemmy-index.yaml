@@ -1,7 +1,7 @@
 version: 1.0.0
 pagination:
   size: 10
-total_count: 16
+total_count: 19
 tags:
   - linux
   - shell
@@ -9,3 +9,4 @@ tags:
   - fs
   - ssh
   - python
+  - grub
