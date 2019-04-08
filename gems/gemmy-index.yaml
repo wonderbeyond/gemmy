@@ -1,7 +1,7 @@
 version: 1.0.0
 pagination:
   size: 10
-total_count: 19
+total_count: 21
 tags:
   - linux
   - shell
@@ -10,3 +10,6 @@ tags:
   - ssh
   - python
   - grub
+  - google
+  - search
+  - proxy

@@ -1,5 +1,5 @@
-[linux shell deb]Lookup which package a file belong to: `dpkg -S /usr/bin/nc`
-[linux shell fs]🦅Find files changed in last 10 seconds: `find . -cmin -0.1 -type f`
+[linux shell deb]Lookup which (deb) package a file belong to: `dpkg -S /usr/bin/nc`
+[linux shell fs]🦅 Find files changed in last 10 seconds: `find . -cmin -0.1 -type f`
 [linux shell]Resize a window to size of 1280x800: `wmctrl -i -r <WIN ID> -e 0,0,0,1280,800`
 [linux shell]Reload shell without exit: `exec $SHELL -l`
 [linux shell]Empty a file: `:>testonly.txt`
