@@ -1,0 +1,4 @@
+[git]Delete a remote branch or tag: `git push origin :<branch-or-tag-name>`
+[git]Changing the Last Commit: `git commit --amend` [learn more](https://www.atlassian.com/git/tutorials/rewriting-history)
+[git]Who wrote this shitty code? `git blame main.py` oh shit... it was me!
+[git]`git show 1.0.0:main.py` shows the content of the file *main.py* in tag of *1.0.0*
