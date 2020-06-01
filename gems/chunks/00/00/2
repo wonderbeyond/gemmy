@@ -1,4 +1,5 @@
 [linux ssh proxy]🚇 `ssh -NL 8888:127.0.0.1:8888 user@remote`: port forwarding over ssh secure channel
+[bash shell]Make a bash script safer with `set -euo pipefail`
 [git]Delete a remote branch or tag: `git push origin :<branch-or-tag-name>`
 [git]Changing the Last Commit: `git commit --amend` [learn more](https://www.atlassian.com/git/tutorials/rewriting-history)
 [git]Who wrote this shitty code? `git blame main.py` oh shit... it was me!

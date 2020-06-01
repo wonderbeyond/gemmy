@@ -1,14 +1,14 @@
 {
-  "main.css": "https://wonderbeyond.github.io/gemmy/gemmy-app/static/css/main.4857546f.chunk.css",
-  "main.js": "https://wonderbeyond.github.io/gemmy/gemmy-app/static/js/main.46a70c17.chunk.js",
-  "main.js.map": "https://wonderbeyond.github.io/gemmy/gemmy-app/static/js/main.46a70c17.chunk.js.map",
-  "static/js/1.d3c44f36.chunk.js": "https://wonderbeyond.github.io/gemmy/gemmy-app/static/js/1.d3c44f36.chunk.js",
-  "static/js/1.d3c44f36.chunk.js.map": "https://wonderbeyond.github.io/gemmy/gemmy-app/static/js/1.d3c44f36.chunk.js.map",
-  "runtime~main.js": "https://wonderbeyond.github.io/gemmy/gemmy-app/static/js/runtime~main.c0bf04da.js",
-  "runtime~main.js.map": "https://wonderbeyond.github.io/gemmy/gemmy-app/static/js/runtime~main.c0bf04da.js.map",
-  "static/media/cat.svg": "https://wonderbeyond.github.io/gemmy/gemmy-app/static/media/cat.480c5e07.svg",
-  "static/css/main.4857546f.chunk.css.map": "https://wonderbeyond.github.io/gemmy/gemmy-app/static/css/main.4857546f.chunk.css.map",
-  "index.html": "https://wonderbeyond.github.io/gemmy/gemmy-app/index.html",
-  "precache-manifest.254a14a855a7aa22e0b58f2f5e980561.js": "https://wonderbeyond.github.io/gemmy/gemmy-app/precache-manifest.254a14a855a7aa22e0b58f2f5e980561.js",
-  "service-worker.js": "https://wonderbeyond.github.io/gemmy/gemmy-app/service-worker.js"
+  "main.css": "/static/css/main.4baa29d6.chunk.css",
+  "main.js": "/static/js/main.f61b243b.chunk.js",
+  "main.js.map": "/static/js/main.f61b243b.chunk.js.map",
+  "static/js/1.31b11af9.chunk.js": "/static/js/1.31b11af9.chunk.js",
+  "static/js/1.31b11af9.chunk.js.map": "/static/js/1.31b11af9.chunk.js.map",
+  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
+  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
+  "static/media/cat.svg": "/static/media/cat.480c5e07.svg",
+  "static/css/main.4baa29d6.chunk.css.map": "/static/css/main.4baa29d6.chunk.css.map",
+  "index.html": "/index.html",
+  "precache-manifest.069bcde03148254809feaff13377e194.js": "/precache-manifest.069bcde03148254809feaff13377e194.js",
+  "service-worker.js": "/service-worker.js"
 }

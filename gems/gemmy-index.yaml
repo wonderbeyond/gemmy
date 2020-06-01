@@ -1,7 +1,7 @@
 version: 1.0.0
 pagination:
   size: 10
-total_count: 25
+total_count: 26
 tags:
   - linux
   - shell
@@ -13,4 +13,5 @@ tags:
   - google
   - search
   - proxy
+  - bash
   - git
