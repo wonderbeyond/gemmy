@@ -19,3 +19,4 @@
 [linux shell]✨ Monitor a command's output continuously, e.g. `watch -n 0.5 'ps aux | wc -l'`
 [google search]You can search Google by file type, try “filetype:pdf python”
 [linux ssh proxy]🚇 `ssh -NL 8888:127.0.0.1:8888 user@remote`: port forwarding over ssh secure channel
+[bash shell]Make a bash script safer with `set -euo pipefail`
